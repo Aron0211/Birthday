@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Birthday card for a special person">
+    <meta name="keywords" content="birthday, card, special, celebration">
+    <meta name="author" content="Papp Áron">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉HAPPY BIRTHDAY!🎉</title>
+    <link rel="stylesheet" href="birthday.css">
+    <link rel="shortcut icon" href="kepek/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+        <div class="main-container">
+            <div id="info-box" class="rejtett-tartalom">
+                <h3>YAAAAY!!!!!!!!</h3>
+                <p>❤️🎉 HAPPY BIRTHDAY MY LOVEEEEEE🎉❤️.</p>
+                <p class="text">I love u sooo so much and I'm so proud of you! I love you more than anything in the world! And I'm so happy to be with you! Aaaaand Happy Happy Happy Birthday!</p>
+                <a href="pictures.html"><button class="btn">Come and take a look our pictures</button></a>
+            </div>
+            <img src="kepek/cat-gif.gif" alt="">
+            <button class="fire-btn" onclick="megjelenitSzoveget()">Again!</button>
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        const fireBtn = document.querySelector(".fire-btn");
+
+        fireBtn.addEventListener("click", () => {
+            confetti({
+                particleCount: 300,
+                spread: 90,
+                origin: { x: 1, y: 0.9 },
+            });
+
+            confetti({
+                particleCount: 300,
+                spread: 90,
+                origin: { x: 0, y: 0.9 },
+            });
+        });
+    </script>
+    <script src="birthday.js"></script>
+</body>
+</html>
