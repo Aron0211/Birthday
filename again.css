@@ -18,6 +18,7 @@ body {
 
 .main-container img{
     max-width: 300px;
+    border-radius: 1px;
 }
 
 .btn{
